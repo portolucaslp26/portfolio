@@ -1,0 +1,11 @@
+:host {
+    background-image: url('../../assets/img/bg-projects.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 425px) {
+    :host {
+        height: 160vh !important;
+    }
+}

@@ -1,14 +1,55 @@
-.header {
-    .navbar {
-      font-size: 1.2rem;
-      font-weight: 300;
-      font-family: 'Roboto Mono', monospace;
 
-      .nav-link {
-        color: #00ff00;
-        text-shadow: 0 0 2px #00ff00;
-        font-size: 0.9rem;
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-container {
+      left: 38%;
+      & .typing {
+        font-size: 37.36px !important;
       }
     }
-  }
+}
 
+@media screen and (max-width: 768px) {
+    .content-container {
+        & .typing {
+            font-size: 33.52px !important;
+            margin-top: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-container {
+        & .typing {
+            font-size: 28.375px !important;
+        }
+        & .typing-content {
+            width: 271px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content-container {
+        width: 198px !important;
+    }
+    .typing-content {
+        font-size: 16px !important;
+        width: 200px;
+        & .typing {
+            font-size: 20px !important;
+        }
+        & h1 {
+            font-size: 20px !important;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+* {
+    z-index: 999;
+}
+.header {
+    .navbar {
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-family: 'Roboto Mono', monospace;
+
+      .nav-link {
+        color: #c80000;
+        font-size: 0.9rem;
+        &:hover {
+            text-shadow: 0 0 5px #c80000;
+            transition: .3s;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .mx-4 {
+      margin: 0 !important;
+    }
+  }
+

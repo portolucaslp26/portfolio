@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.greenNeon {
+    color: #c80000;
+    transition: .3s;
+    &:hover {
+        text-shadow: 0 0 5px #c80000;
+    }
+}

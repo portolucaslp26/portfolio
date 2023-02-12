@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +11,9 @@ import { loadFull } from "tsparticles";
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
+
   }
+
 
   id = "tsparticles";
 
@@ -20,7 +24,7 @@ export class HomeComponent implements OnInit {
   particlesOptions = {
       background: {
           color: {
-              value: "#0d47a1",
+              value: "#000",
           },
       },
       fpsLimit: 120,
@@ -48,10 +52,10 @@ export class HomeComponent implements OnInit {
       },
       particles: {
           color: {
-              value: "#ffffff",
+              value: "#c80000",
           },
           links: {
-              color: "#ffffff",
+              color: "#c80000",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -67,7 +71,7 @@ export class HomeComponent implements OnInit {
                   default: OutMode.bounce,
               },
               random: false,
-              speed: 6,
+              speed: 4,
               straight: false,
           },
           number: {

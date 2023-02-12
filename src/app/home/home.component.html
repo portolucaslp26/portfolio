@@ -1,28 +1,16 @@
-<header class="header bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Meu Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projetos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-      </ul>
+<div id="home"></div>
+<ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+  (particlesLoaded)="particlesLoaded($event)">
+</ng-particles>
+
+<div style="color: white;" class="content-container">
+
+  <ngx-typed-js [strings]="['pontual.', 'curioso.', 'criativo.', 'ágil.']" [loop]="true" [backSpeed]="30"
+  [shuffle]="true" [typeSpeed]="80">
+    <h1>Olá,<br> me chamo <span style="color: #c80000;">Lucas Porto</span></h1>
+    <div class="d-flex typing-content">
+      <h1 style="margin-top: 0.4rem!important">e eu sou&nbsp;</h1><span style="font-size: 40px;" class="typing"></span>
     </div>
-  </nav>
-</header>
-<ng-particles
-    [id]="id"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-></ng-particles>
+    <br><p>Um Desenvolvedor Fullstack que irá transformar suas ideias de negócio em realidade.</p>
+  </ngx-typed-js>
+</div>
