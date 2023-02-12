@@ -10,6 +10,7 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

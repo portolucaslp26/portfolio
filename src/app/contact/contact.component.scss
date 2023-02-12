@@ -1,3 +1,7 @@
+* {
+    text-align: center !important;
+}
+
 a:hover {
     color: red;
 }
@@ -19,7 +23,13 @@ img {
 @media screen and (max-width: 425px) {
     :host {
         text-align: center;
-        height: 80vh !important;
+        height: 60vh !important;
+    }
+    .justify-content-between {
+        flex-direction: column;
+    }
+    #e-mail {
+        margin-right: 0 !important;
     }
     .fa-map-marker-alt, .fa-envelope {
         margin: 0;
