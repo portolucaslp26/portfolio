@@ -10,7 +10,6 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -23,9 +22,6 @@ import { AgmCoreModule } from '@agm/core';
     ContactComponent
   ],
   imports: [
-    AgmCoreModule.forRoot({
-      apiKey: ''
-    }),
     BrowserModule,
     AppRoutingModule,
     NgParticlesModule,
